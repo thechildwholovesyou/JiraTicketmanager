@@ -1,0 +1,331 @@
+body{
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100vw;
+    height: 12vh;
+    background-color:rgb(56, 26, 35);
+    display:flex;
+}
+
+.ticket{
+    font-style :unset;
+}
+
+.filter-container,.add-delete-container{
+    margin-left: 8rem;
+    margin-top: 1rem;
+    background-color : rgba(134, 117, 106, 0.884);
+    height: 8vh;
+    display: flex;
+}
+
+.add-delete-container{
+    margin-left: 5vw;
+    width: 10vw;
+}
+
+.filter-container{
+    width: 18vw;
+     
+}
+
+.filter{
+ height: 100%;
+ width: 25%;
+ 
+}
+
+.filter:hover{
+    cursor: pointer;
+    /* background-color:lightgrey; */
+    transform: scale(1.5);
+}
+
+.pink-color-btn,.blue-color-btn,.green-color-btn,.yellow-color-btn{
+       display: block;
+       width: 40%;
+       height: 40%;
+       border-radius: 5%;
+       margin-top: calc(8vh*0.3);
+       margin-bottom: calc(8vh*0.3);
+       margin-right: calc(4.5vw*0.3);
+       margin-left: calc(4.5vw*0.3);
+       
+}
+
+.pink-color-btn,.priority-color-pink{
+    background-color: #d870a4;
+}
+
+.blue-color-btn,.priority-color-blue{
+    background-color:#0077ff6b;
+}
+
+.green-color-btn,.priority-color-green{
+    background-color: hsl(101, 100%, 25%);
+}
+
+.yellow-color-btn,.priority-color-yellow{
+    background-color: yellow;
+}
+
+.add,.delete{
+    width: 50%;
+    height: 100%;
+}
+
+.add:hover,.delete:hover{
+   cursor: pointer;
+   /* background-color: lightslategray; */
+   transform: scale(1.5);
+}
+
+.action-btn{
+    width:40%;
+    height: 40%;
+    background-color: #fff;
+    display: block;
+    margin-top: calc(8vh*0.3);
+    margin-bottom: calc(8vh*0.3);
+    margin-left: calc(4.5vw*0.3);
+    margin-right: calc(4.5vw*0.3);
+    border-radius: 10%;
+    padding-left: 3%;
+}
+
+.ticket-container {
+    height: 88vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, rgba(0, 255, 200, 0.582), rgba(196, 116, 172, 0.904));
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5vh;
+    flex-wrap: wrap;
+}
+
+.modal-parent{
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.input-modal{
+    height: 55%;
+    width: 100%;
+    background-color: #fff;
+    outline: none;
+    padding: 5rem;
+}
+
+.textarea{
+    height:100%;
+    width: 100%;
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    background-color: rgba(160, 153, 159, 0);
+    border-radius: 2%;
+    font-size: 20px;
+}
+
+.transparent-modal{
+    width: 0vw;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    top:0;
+    right:45vw;
+    position: absolute;
+}
+
+
+.modal-confirmation{
+    display: flex;
+height: 10vh;
+width: 45vw;
+background-color: #fff;
+align-items: center;
+
+}
+
+.add-task{
+    display: flex;
+    padding-top: 6vh;
+    align-items: center;
+    height: 15%;
+    width: 35vw;
+    margin-left: 5vw;
+    border-bottom: 3px solid #999393;
+    background-color: #fff;
+    font-size: 40px;
+    justify-content: center;
+   text-shadow: 0 0 3px #3f0303;
+}
+
+.btn{
+    height: 4vh;
+    width: 10vw;
+    background-color: rgb(151, 140, 140);
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    border-radius: 5%;
+}
+
+.save-btn{
+    margin-left: 30rem;
+}
+.cancel-btn{
+    margin-right: 1rem;
+    margin-left: 4rem;
+}
+
+.btn:hover{
+    background-color: grey;
+cursor: pointer;
+transform: scale(1.2);
+}
+
+.priority-list{
+    display: flex;    
+}
+
+.modal-filter{
+    width: 25%;
+    height: 16vh;
+   
+}
+
+.modal-filter:hover{
+    transform: scaleY(1.3);
+    cursor: pointer;
+}
+
+.modal-pink-filter{
+    border-radius: 15px 0px 0px 0px ;
+    background-color: palevioletred;
+}
+.modal-blue-filter{
+    border-radius: 15px 0px 0px 0px ;
+    background-color: blue;
+}
+.modal-green-filter{
+    border-radius: 15px 0px 0px 0px ;
+    background-color: green;
+}
+.modal-yellow-filter{
+    border-radius: 15px 0px 0px 0px ;
+    background-color: yellow;
+}
+.priority-color{
+    height: 4vh;
+    width:100%;
+    border-radius: 21px 21px 0px 0px ;
+}
+
+.ticket{
+    height:24vh;
+    width: 18vw;
+    background-color: rgb(90, 84, 83);
+    border-radius: 15px 15px 15px 15px ;
+   
+}
+
+.ticket-id{
+    height:6vh;
+    width: 100%;
+    border-bottom: 3px solid #999393;
+    padding: 3%;
+    color: white;
+}
+
+.task-container{
+height:14vh;
+width: 100%;
+padding: 3%;
+color: rgba(255, 255, 255, 0.753);
+}
+
+.ticket.active {
+  box-shadow: 0 0 3px 3px rgb(48,22,65);
+}
+
+.filter.active{
+    border: black;
+}
+
+.info-btn{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 8vh;
+    width: 6vw;
+    color: whitesmoke;
+   top: 4.5vh;
+   right: 1rem;
+}
+
+.info{
+    height: 85vh;
+    width: 20vw;
+    background-color: lightgoldenrodyellow;
+    position: fixed;
+    top: 7vh;
+    right: 2rem;
+    border-radius: 10px;
+    padding: 2vh;
+}
+.info-btn:hover {
+	transform: scale(1.2, 1.2);
+	border-radius: 5rem 5rem 5rem 0rem;
+}
+
+.title{
+    height: 8vh;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: linen; */
+    margin-left: 2rem;
+    margin-top: 1rem;
+    color:white;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.material-icon,.info-btn{
+    font-size: 30px;
+}
+
+.deleteTicket{
+    margin-left: 25rem;
+    margin-top: 1.8rem;
+}
+
+.material-icon,.deleteTicket{
+   color:white;
+   font-size: 40px;
+   border-radius: 2px;
+
+}
+
+.deleteTicket:hover{
+    cursor: pointer;
+    box-shadow: 0 0 3px 3px rgb(241, 240, 241);
+}
